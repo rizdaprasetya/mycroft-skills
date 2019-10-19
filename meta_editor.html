@@ -503,8 +503,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pickr-widget/dist/pickr.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/pickr-widget/dist/pickr.min.js"></script>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizdaprasetya/IconPicker@feeba2f/dist/iconpicker-1.5.0.css" />
-  <script src="https://cdn.jsdelivr.net/gh/rizdaprasetya/IconPicker@feeba2f/dist/iconpicker-1.5.0.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizdaprasetya/IconPicker@d5364ec/dist/iconpicker-1.5.0.css" />
+  <script src="https://cdn.jsdelivr.net/gh/rizdaprasetya/IconPicker@d5364ec/dist/iconpicker-1.5.0.js"></script>
 
   <script type="text/javascript">
 
@@ -1384,13 +1384,15 @@ Yadda yadda..."></textarea>
 // Initialize Font Awesome Icon Picker
 IconPicker.Init({
   // URL of fontawesome CSS currently used
-  faCssUrl: "https://use.fontawesome.com/releases/v5.2.0/css/all.css",
+  faCssUrl: "https://use.fontawesome.com/releases/v5.2.0/webfonts/fa-solid-900.svg#fontawesome",
   // Optional: Change the buttons or search placeholder text according to the language.
   searchPlaceholder: 'Search Icon',
   showAllButton: 'Show All',
   cancelButton: 'Cancel',
   noResultsFound: 'No results found.',
   borderRadius: '20px',
+  extractorPattern: '/glyph-name="(.*?)"/g',
+  faPrefixClassName: 'fas fa-',
 });
 
 // Attach icon picker to the button_iconpicker element
